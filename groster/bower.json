@@ -5,6 +5,14 @@
     "ionic": "driftyco/ionic-bower#1.2.4"
   },
   "dependencies": {
-    "firebase": "~2.4.0"
+    "firebase": "~2.4.0",
+    "ionic-material": "~0.4.2",
+    "robotodraft": "~1.1.0"
+  },
+  "resolutions": {
+    "ionic": "1.2.4",
+    "angular": "1.4.3",
+    "angular-animate": "1.4.3",
+    "angular-sanitize": "1.4.3"
   }
 }
