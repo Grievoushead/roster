@@ -38,6 +38,7 @@ angular.module('starter.controllers', [])
       $scope.$broadcast('scroll.refreshComplete');
       //ionicMaterialMotion.fadeSlideInRight();
       ionicMaterialMotion.ripple();
+      ionicMaterialInk.displayEffect();
     }, 3000);
   };
 

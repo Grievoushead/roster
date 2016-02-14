@@ -4,8 +4,23 @@
       pulling-text="Pull to refresh..."
       on-refresh="doRefresh()">
     </ion-refresher>
+
+    <!--<div class="list animate-ripple">
+      <a class="item item-thumbnail-left" ng-repeat="chat in chats" ng-href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}"></img>
+        <h2>{{chat.name}}</h2>
+        <p>Sheets of paper</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </a>
+    </div>-->
     <ion-list class="list animate-ripple">
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+
+
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
         <p>{{chat.lastText}}</p>

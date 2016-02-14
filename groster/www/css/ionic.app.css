@@ -9819,3 +9819,5 @@ a.button {
   font-style: normal; }
 
 /* END Black */
+.bar {
+  box-shadow: none !important; }
