@@ -5,7 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ionic-material'])
+angular.module('starter', [
+  'ionic', 'starter.controllers', 'starter.services', 'ionic-material', 'groster.fabButton'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -56,7 +57,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         'tab-chats': {
           templateUrl: 'templates/tab-chats.html',
           controller: 'ChatsCtrl'
-        }
+        }/*,
+        'tab-chats-fab': {
+          templateUrl: 'templates/tab-chats-fab.html',
+          controller: 'ChatsCtrl'
+        }*/
       }
     })
     .state('tab.chat-detail', {
